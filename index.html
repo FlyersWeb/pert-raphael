@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PERT SVG</title>
+    <script src="build/pert-svg/pert-svg-0.1.0.min.js"></script>
+  </head>
+  <body>
+    <div id="container" style="height:550px;width:100%;">PERT DIAGRAM LEGEND</div>
+    <script type="text/javascript">
+
+      var tasks = [{
+        parent: null,
+        id: '1234',
+        name: 'Test Task',
+        duration: '2'
+      }];
+
+      var project = {
+        begin: '1388530800000',
+        end: '1417388400000',
+        tasks: []
+      };
+
+      project.tasks = tasks;
+
+      Raphael('container').pertChart(project,8);
+
+    </script>
+  </body>
+</html>

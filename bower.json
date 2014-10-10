@@ -1,0 +1,26 @@
+{
+  "name": "pert-svg",
+  "version": "0.1.0",
+  "authors": [
+    "Flyers <contact@flyers-web.org>"
+  ],
+  "description": "PERT diagrams",
+  "main": "index.html",
+  "keywords": [
+    "PERT",
+    "diagram",
+    "SVG"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.github.com/FlyersWeb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "raphael": "~2.1.2"
+  }
+}
