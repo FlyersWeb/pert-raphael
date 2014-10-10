@@ -1,4 +1,4 @@
-pert-svg
+pert-raphael
 ========
 
 What da fuck ?
@@ -11,20 +11,20 @@ Installation
 
 Install grunt and bower first :
   
-  npm install -g grunt-cli bower
+	npm install -g grunt-cli bower
 
 Next install npm dependencies :
 
-  npm install
+	npm install
 
 Next install bower dependencies :
 
-  bower install
+	bower install
 
 You're good to compile project :
 
-  grunt
-  grunt test
+	grunt
+	grunt test
 
 You should have a successfull build in ./build/pert-svg folder
 
