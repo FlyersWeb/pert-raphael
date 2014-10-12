@@ -12,8 +12,23 @@
       var tasks = [{
         parent: null,
         id: '1234',
-        name: 'Test Task',
+        name: 'Parent Task #1',
         duration: '2'
+      },{
+        parent: null,
+        id: '1235',
+        name: 'Parent Task #2',
+        duration: '1'
+      },{
+        parent: 1234,
+        id: '1236',
+        name: 'Child Task #1',
+        duration: '4'
+      },{
+        parent: 1234,
+        id: '1237',
+        name: 'Child Task #2',
+        duration: '5'
       }];
 
       var project = {

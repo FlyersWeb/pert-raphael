@@ -118,8 +118,8 @@ Raphael.fn.pertChart = function (p, wd) {
         var ts = p.tasks;
         var onp = taskCountParents( ts[ts.length-1], ts )+1;
         
-        var db = new Date(p.begin);
-        var de = new Date(p.end);
+        var db = new Date(parseInt(p.begin));
+        var de = new Date(parseInt(p.end));
         
         var st = {id: 0,
             name: 'Start',
@@ -129,8 +129,8 @@ Raphael.fn.pertChart = function (p, wd) {
         // Display start
         taskDisplay(r,st,10,10,w,h,db,db,true);
         
-        var dtb = new Date(p.begin), dtbs = {};
-        var dte = new Date(p.end), dtes = {};
+        var dtb = new Date(parseInt(p.begin)), dtbs = {};
+        var dte = new Date(parseInt(p.end)), dtes = {};
         var odte = new Date(dte);
         var od = 0;
         var cs = {};
