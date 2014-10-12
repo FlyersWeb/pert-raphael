@@ -2,3 +2,4 @@ bower_components
 node_modules
 assets
 index-dev.html
+build/pert-svg/raphael.min.js

@@ -16,9 +16,14 @@ module.exports = function(grunt) {
                 banner: '/* <%= pkg.name %> v<%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> by @flyersweb */\n',
                 mangle: true
             },
+            raphael: {
+                files: {
+                    'build/pert-svg/raphael.min.js': ['assets/js/_bower.js'],
+                }
+            },
             build: {
                 files: {
-                    'build/pert-svg/<%= pkg.name %>-<%= pkg.version %>.min.js': ['assets/js/_bower.js', 'src/pert.js'],
+                    'build/pert-svg/<%= pkg.name %>-<%= pkg.version %>.min.js': ['src/pert.js'],
                 }
             }
             // ,
@@ -66,5 +71,5 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('test', ['jshint']);
-    grunt.registerTask('default', ['bower_concat', 'uglify:build']);
+    grunt.registerTask('default', ['bower_concat', 'uglify:raphael','uglify:build']);
 };
